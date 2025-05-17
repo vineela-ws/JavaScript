@@ -3,7 +3,7 @@
 //Ternary
 //Comparison
 //Logical
-//Binary
+//Bitwise
 
 //Arithmatic
 let x = 10;
@@ -80,6 +80,69 @@ console.log(eligibleForLoan);
 
 let isActive =true;
 console.log(!isActive);
+
+//Logical Operators with Non -boolean
+//falsy false
+//undefined
+//null
+//0
+//false
+//''
+//NaN
+
+//Truthy values which are not falsy
+console.log(false || 'Vineela');
+console.log(false || 0);
+console.log(false || 1 || 2);
+console.log(true || 1 || 2);
+console.log(false || undefined);
+console.log(false || null);
+
+//Real Time example
+let userColor = 'red';
+let defaultColor = 'blue';
+
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);
+
+//Bitwise
+//1 -00000001
+//2 -00000010
+//3 -00000011
+
+console.log(1 | 2);  // 3
+console.log(1 & 2);  // 0
+
+//Operator Precedence
+console.log(2+3*4);
+console.log((2+3)*4);
+
+//Swap 2 values
+let a = 10;
+let b = 20;
+
+console.log(a);
+console.log(b);
+
+let d =a;
+a=b;
+b=c;
+
+console.log(a);
+console.log(b);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
