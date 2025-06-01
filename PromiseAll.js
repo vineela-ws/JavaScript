@@ -73,9 +73,12 @@ Promise.all([
     getData(),
     getError()
 ])
-.then(dataArray =>{
-    console.log("All data fetched:", dataArray);
+.then(results =>{
+    results.forEach(result =>{
+        if(result.status == 'fulfilled'){
+            console.log("Value: ",result.value);
+        }else{
+            console.log("Reason for Rejection: ",result.reason);
+        }
+    })
 })
-.catch(error =>{
-   console.log('Error occured', error)
-});
